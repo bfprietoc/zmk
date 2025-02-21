@@ -22,6 +22,7 @@ jobs:
       - name: Setup West and Zephyr
         run: |
           pip install west
+          pip install pyelftools
           west init -l app/
           west update
           west zephyr-export
